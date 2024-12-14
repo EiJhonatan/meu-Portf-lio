@@ -139,6 +139,10 @@ text-align: center;
 .curiosidade{
  text-align: center;
 }
+.curiosidade p{
+    margin: 50px;
+    
+}
 .sobre-conteudo{
     
     display: flex;
