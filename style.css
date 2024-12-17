@@ -1,225 +1,220 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-p{
-    font-family: Helvetica,Arial, sans-serif;  
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
-.menu-principal{
+
+
+.menu-principal {
     background-color: blue;
-    width: auto;
-    height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 10px;
 }
 
-.menu-principal ul{
-    list-style: none;
+.menu-principal ul {
     display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.menu-principal li {
     list-style: none;
-    margin: 10px;
-   align-items: center;
+    gap: 20px;
 }
 
-.menu-principal li a{
+.menu-principal li a {
     color: white;
     text-decoration: none;
-  
+    font-size: 18px;
+    transition: color 0.3s;
 }
-.inicio{
-   
-    width: auto;
-    height: 500px;
+
+.menu-principal li a:hover {
+    color: lightblue;
+}
+
+
+.inicio {
     display: flex;
-    
+    flex-wrap: wrap; 
+    align-items: center; 
+    width: 100%;
+    height: 100vh; 
+    padding: 20px; 
+    box-sizing: border-box
 }
 
-
-.conteudo-texto{
+.conteudo-texto {
+    width: 50%; 
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
-    width:50%;   
+    padding: 20px; 
+    box-sizing: border-box;
 }
-.imagem-inicio{
-    background-color: brown;
+
+.conteudo-img{
+    width: 50%; 
     display: flex;
-
+    justify-content: center; 
+    align-items: center;
 
 }
+.conteudo-img img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
 
-.sobre{
-    width: 100%;
+
+.sobre {
+    margin-top: 20px;
+    
     background-color: blue;
-    display: flex;
-    flex-direction: column; 
+    color: white;
 }
-
 .sobre h1 {
-    color: aliceblue;
-    margin-top: 30px;
-    align-self: center;    
+    text-align: center;
+    padding: 20px;
 }
 
-.sobre p{
-    color: aliceblue;
-    align-self: end;  
+.sobre-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sobre-texto {
+    max-width: 600px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
     text-align: center;
 }
-.sobre-img{ 
-    width:50%;
+.sobre-tecnogia{
+    text-align: center;
 }
-.sobre-texto{
-    background-color: black;
-    flex: 2; 
-    word-wrap: break-word; 
-    max-width: 100%;
-    box-sizing: border-box; 
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-   padding: 10px;
+.curiosidade{
+    text-align: center;
+}
+.curiosidade p{
+font-size: 10px;
 }
 
-.sobre-texto h2{
-   color: #fff;
-   display: flex;
-   align-self: center;  
-}
-.sobre-tecnogia{
-    display: flex;
-   align-items: center;
-   flex-direction: column;
-    color: #fff; 
-}
 .tecnogia {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: center; 
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
-.tecnogia a {
-    flex: 0 0 calc(33.333% - 20px); 
+.tecnogia img {
+    width: 80px;
+    transition: transform 0.3s;
+}
+
+.tecnogia img:hover {
+    transform: scale(1.1);
+}
+
+
+
+#contato {
     text-align: center;
-}
-.tecnogia a img {
-    width: 80px; 
-    height: auto;
-    margin: 50px;
-}
-.tecnogia a {
-    display: block;
-    animation: balanco 3s infinite; 
-    transition: transform 0.3s ease;
+    padding: 20px;
 }
 
-.tecnogia a:hover {
-    animation:none;
-    transform: scale(0.8); 
-}
-
-.sobre-curiosidade{
-color: #fff;
-display: flex;
-justify-content: center;
-text-align: center;
-}
-.curiosidade{
- text-align: center;
-}
-.curiosidade p{
-    margin: 50px;
-}
-.sobre-conteudo{
-    
-    display: flex;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    max-width: 100%; 
-    align-items: center; 
-}
-
-#contato{
-    width: 100%;
-    display:flex ;
-    align-items: center;
-    flex-direction: column;
-}
-
-#contato h1{
-    margin: 50px;
-}
-
-
-#contato a{
-    text-decoration: none;
-
-}
-.contato-redes{
-    display: flex;
-    flex-direction: row;
-}
-.contato-redes img {
-    animation: balanco 3s infinite; 
-    transition: transform 0.3s ease;
-    
-    flex-direction:column;
-    
-}
-
-.contato-redes a {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+.contato-redes {
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    gap: 20px;
+    margin: 20px 0;
 }
 
-.contato-redes a:hover {
-    transform: scale(1.2) rotate(360deg);
-    background-color: gray; 
-  
+.contato-redes img {
+    width: 40px;
+    transition: transform 0.3s;
 }
+
 .contato-redes img:hover {
-    animation: none;
-}
-
-#contato h2{
-    margin: 50px;
-
+    transform: scale(1.2);
 }
 
 
-footer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
 }
 
-@keyframes balanco {
+
+@media (max-width: 768px) {
+    .menu-principal ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+    }
+
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+
+    .tecnogia img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicio {
+        height: 0%;
+        padding: 0%;
+    }
    
-    25% {
-        transform: rotate(3deg);
+    .sobre {
+        margin-top: 0;
+        padding:0;
     }
-    50% {
-        transform: rotate(-3deg);
+    .sobre h1 {
+        padding: 10px;
+        text-align: center;
     }
-    75% {
-        transform: rotate(3deg);
+    .sobre-texto{
+        margin: 10px;
     }
-   
+    .menu-principal li a {
+        font-size: 16px;
+    }
+
+    .conteudo-texto h1 {
+        font-size: 13px;
+    }
+
+    .conteudo-texto p {
+        font-size: 10px;
+    }
+
+    .sobre-texto {
+        padding: 10px;
+    }
+    .sobre-tecnogia h2{
+        text-align: center;
+    }
+    .curiosidade{
+        text-align: center;
+    }
+    .curiosidade p{
+        font-size: 10px;
+    }
 }
